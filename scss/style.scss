@@ -1,0 +1,17 @@
+@import '_variables';
+@import 'header';
+@import 'content';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $font-color;
+    text-align: center;
+    background-color: #dedde4;
+    font-family: $default-font;
+}

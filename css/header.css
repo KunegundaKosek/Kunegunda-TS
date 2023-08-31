@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
+.header {
+  width: 100%;
+  border-bottom: 3px solid #b770b0;
+}
+.header h1 {
+  font-family: "Dancing Script", cursive;
+  color: #2f3541;
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 30px 0;
+  font-size: 3em;
+}
+
+.menu {
+  text-align: center;
+  padding: 20px 0;
+  height: 75px;
+  border-bottom: 3px solid #b770b0;
+}
+.menu div {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Tektur", cursive;
+  padding: 0 30px;
+  width: 200px;
+  cursor: pointer;
+}
+.menu div:hover {
+  border-bottom: 2px solid #b770b0;
+}/*# sourceMappingURL=header.css.map */

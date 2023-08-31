@@ -1,0 +1,10 @@
+@import '_variables';
+
+.footer {
+    background-color: $additional-color;
+    height: 100px;
+
+    p {
+        padding: 20px;
+    }
+}
