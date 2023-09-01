@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("project").addEventListener("click",(()=>{console.log("click project button")}))})();

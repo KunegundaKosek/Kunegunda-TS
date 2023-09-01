@@ -28,6 +28,7 @@
   font-family: "Tektur", cursive;
   padding: 0 30px;
   width: 200px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .menu div:hover {
