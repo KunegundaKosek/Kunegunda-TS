@@ -1,39 +1,27 @@
 export default class Navigation {
     private title: string;
     private menu: string[];
-    private classHeader: string;
     private classIcon: string;
-    private classNav: string;
 
     constructor(
         title: string,
         menu: string[],
-        classHeader: string,
         classIcon: string,
-        classNav: string,
     ) {
         this.title = title;
         this.menu = menu;
-        this.classHeader = classHeader;
         this.classIcon = classIcon;
-        this.classNav = classNav;
 
         this.render();
     }
 
     render(): void {
-        const body = document.querySelector('body')! as HTMLBodyElement;
-
-        const header = this.createHeader();
-        const nav = this.createNav();
-
-        body.appendChild(header);
-        body.appendChild(nav);
+        this.createNav();
+        this.createHeader();
     }
 
     private createHeader(): HTMLHeadElement {
-        const header = document.createElement('header');
-        header.setAttribute('class', this.classHeader);
+        const header = document.querySelector('header')! as HTMLHeadElement;
 
         const h1 = document.createElement('h1');
         h1.textContent = this.title;
@@ -48,8 +36,7 @@ export default class Navigation {
     }
 
     private createNav(): HTMLElement {
-        const nav = document.createElement('nav');
-        nav.setAttribute('class', this.classNav);
+        const nav = document.querySelector('nav')! as HTMLElement;
 
         this.menu.forEach((link) => {
             const div = this.createMenuLink(link);
