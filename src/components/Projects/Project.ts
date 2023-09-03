@@ -3,6 +3,7 @@ export default class Project {
     private src: string;
     private text: string;
     private button: string;
+    private buttonId: string;
     private event: () => void;
     private classSection: string;
 
@@ -11,13 +12,15 @@ export default class Project {
         src: string,
         text: string,
         button: string,
+        buttonId: string,
         event: () => void,
-        classSection: string
+        classSection: string,
     ) {
         this.title = title;
         this.src = src;
         this.text = text;
         this.button = button;
+        this.buttonId = buttonId;
         this.event = event;
         this.classSection = classSection;
 
@@ -45,6 +48,7 @@ export default class Project {
 
         const button = document.createElement('button');
         button.textContent = this.button;
+        button.id = this.buttonId;
         button.addEventListener('click', this.event);
         tile.appendChild(button);
 

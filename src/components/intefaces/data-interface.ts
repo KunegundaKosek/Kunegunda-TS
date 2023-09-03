@@ -3,6 +3,7 @@ export interface ProjectData {
       src: string;
       text: string;
       button: string;
-      event: () => void;
+      buttonId?: string;
+      event: Function;
       classSection: string;
 }

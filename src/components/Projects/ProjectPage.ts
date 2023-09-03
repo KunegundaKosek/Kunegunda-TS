@@ -13,6 +13,7 @@ export default class ProjectPage {
                     projectData.src,
                     projectData.text,
                     projectData.button,
+                    projectData.buttonId,
                     projectData.event,
                     projectData.classSection
                 ),
