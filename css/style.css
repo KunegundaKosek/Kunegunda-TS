@@ -35,6 +35,38 @@
   border-bottom: 2px solid #b770b0;
 }
 
+.content__modal {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  right: 20px;
+  width: calc(98% - 40px);
+  height: 90vh;
+  background-color: pink;
+  border-radius: 10px;
+}
+.content__modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.content__modal-content {
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  font-size: 50px;
+}
+
 .content {
   width: 100%;
 }
@@ -95,32 +127,6 @@
 }
 .content__projects article button:hover {
   background-color: #b770b0;
-}
-.content__modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  background-color: pink;
-  border-radius: 10px;
-}
-.content__modal-content {
-  background-color: grey;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.content__modal-content-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
 }
 
 .footer {

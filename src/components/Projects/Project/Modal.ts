@@ -1,4 +1,4 @@
-export default function Modal( divModalClass: string, divModalId: string, divModalContentClass: string, spanClass: string, spanId: string, buttonTxt: string, paragraphTxt: string): void {
+export default function Modal( divModalClass: string, divModalId: string, divModalContentClass: string, spanClass: string, spanId: string, paragraphTxt: string): void {
 
       const main = document.querySelector('main')! as HTMLElement;
       console.log(main);
@@ -16,15 +16,14 @@ export default function Modal( divModalClass: string, divModalId: string, divMod
       // divModalContent.className = 'content__modal-content';
       divModalContent.className = divModalContentClass;
 
-      const button: HTMLButtonElement = document.createElement('button');
+      const button = document.createElement('i');
       // span.className = 'content__modal-content-close';
       button.className = spanClass;
-      button.id = spanId,
-      button.textContent = buttonTxt;
+      button.id = spanId;
       const p: HTMLParagraphElement = document.createElement('p');
       p.textContent = paragraphTxt;
 
-      divModalContent.appendChild(button);
+      divModal.appendChild(button);
       divModalContent.appendChild(p);
 
       divModal.appendChild(divModalContent);

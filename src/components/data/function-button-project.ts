@@ -5,10 +5,9 @@ export default function openAndCloseModal() {
         'content__modal',
         'myModal',
         'content__modal-content',
-        'content__modal-content-close',
+        'content__modal-close fa-regular fa-circle-xmark',
         'closeModalBtn',
-        '&times;',
-        'To jest text modala',
+        'txt',
     );
 
     const modal = document.getElementById('myModal')! as HTMLDivElement;
