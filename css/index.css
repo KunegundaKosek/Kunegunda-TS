@@ -29,6 +29,10 @@
   flex-wrap: wrap;
   border: 1px solid #b770b0;
   border-radius: 10px;
+  transition: 0.4s;
+}
+.content__projects article:hover {
+  background-color: #d9b4d5;
 }
 .content__projects article h2 {
   display: block;

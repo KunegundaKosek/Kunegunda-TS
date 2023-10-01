@@ -1,32 +1,44 @@
-export default function Modal( divModalClass: string, divModalId: string, divModalContentClass: string, spanClass: string, spanId: string, paragraphTxt: string): void {
+export default class Modal {
+      private divModal: HTMLDivElement;
+      private divModalContent: HTMLDivElement;
 
-      const main = document.querySelector('main')! as HTMLElement;
-      console.log(main);
-      
-      const divModal: HTMLDivElement = document.createElement('div');
-      // divModal.className = 'content__modal';
-      divModal.className = divModalClass;
-      // divModal.id = 'modal';
-      divModal.id = divModalId;
-      divModal.style.display = 'none';
+      constructor(
+            private divModalClass: string,
+            private divModalId: string,
+            private divModalContentClass: string,
+            private spanClass: string,
+            private spanId: string,
+      ) {
+            this.divModal = this.createDivModal();
+            this.divModalContent = this.createDivModalContent();
+            this.setupModal();
+      }
 
-      main.appendChild(divModal);
+      private createDivModal(): HTMLDivElement {
+            const divModal = document.createElement('div');
+            divModal.className = this.divModalClass;
+            divModal.id = this.divModalId;
+            divModal.style.display = 'none';
+            return divModal;
+      }
 
-      const divModalContent: HTMLDivElement = document.createElement('div');
-      // divModalContent.className = 'content__modal-content';
-      divModalContent.className = divModalContentClass;
+      private createDivModalContent(): HTMLDivElement {
+            const divModalContent = document.createElement('div');
+            divModalContent.className = this.divModalContentClass;
+            return divModalContent;
+      }
 
-      const button = document.createElement('i');
-      // span.className = 'content__modal-content-close';
-      button.className = spanClass;
-      button.id = spanId;
-      const p: HTMLParagraphElement = document.createElement('p');
-      p.textContent = paragraphTxt;
+      private setupModal(): void {
+            const main = document.querySelector('main')! as HTMLElement;
+            console.log(main);
 
-      divModal.appendChild(button);
-      divModalContent.appendChild(p);
+            const button = document.createElement('i');
+            button.className = this.spanClass;
+            button.id = this.spanId;
 
-      divModal.appendChild(divModalContent);
+            this.divModal.appendChild(button);
+            this.divModal.appendChild(this.divModalContent);
+            main.appendChild(this.divModal);
+      }
 
-      
 }

@@ -35,6 +35,11 @@
             border: 1px solid $bar-color;
             border-radius: 10px;
 
+            transition: 0.4s;
+            &:hover {
+                background-color: lighten($bar-color, 20%);
+            }
+
             h2 {
                 display: block;
                 width: 100%;
@@ -70,6 +75,4 @@
             }
         }
     }
-
-    
 }

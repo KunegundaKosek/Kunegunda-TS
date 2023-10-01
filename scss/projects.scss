@@ -1,0 +1,12 @@
+@import '_variables';
+
+h1 {
+      font-size: $title-size;
+      font-family: $title-font;
+}
+
+p {
+      font-size: $default-size;
+      font-family: $default-font;
+      text-transform: lowercase;
+}
