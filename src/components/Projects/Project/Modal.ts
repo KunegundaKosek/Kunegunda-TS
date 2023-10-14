@@ -24,7 +24,7 @@ export default class Modal {
 
       private createDivModalContent(): HTMLDivElement {
             const divModalContent = document.createElement('div');
-            divModalContent.className = this.divModalContentClass;
+            divModalContent.className = this.divModalContentClass; //!!!!!!!!!!!!!!!!!!!!!!!!
             return divModalContent;
       }
 

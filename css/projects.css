@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
-h1 {
+.content__modal-content-h1 {
   font-size: 2.4em;
   font-family: "Rubik", sans-serif;
 }
-
-p {
+.content__modal-content-p {
   font-size: 24px;
   font-family: "Lunasima", sans-serif;
   text-transform: lowercase;
+}
+.content__modal-content-h4 {
+  margin-top: 400px;
 }/*# sourceMappingURL=projects.css.map */

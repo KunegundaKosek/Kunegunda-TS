@@ -1,18 +1,21 @@
 import Modal from '../Projects/Project/Modal';
 
-export default function openAndCloseModal() {
-    new Modal(
+export default function openAndCloseModal(className: string, id: string, buttonId: string) {
+
+    const x = new Modal(
         'content__modal',
-        'myModal',
-        'content__modal-content',
+        id,
+        className,
         'content__modal-close fa-regular fa-circle-xmark',
-        'closeModalBtn',
+        buttonId,
     );
 
-    const modal = document.getElementById('myModal')! as HTMLDivElement;
+    console.log(x);
+
+    const modal = document.getElementById(id)! as HTMLDivElement;
 
     const button = document.getElementById(
-        'closeModalBtn',
+        buttonId,
     )! as HTMLButtonElement;
     console.log(button);
 

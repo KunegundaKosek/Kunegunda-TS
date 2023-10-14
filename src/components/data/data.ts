@@ -1,6 +1,7 @@
 import { ProjectData } from '../intefaces/data-interface';
 import openAndCloseModal from './function-button-project';
-import MousePosition from '../Projects/Project/Project1/MousePosition';
+import { MousePositionController } from '../Projects/Project/Project1/MousePosition';
+// import { AddingOnClick } from '../Projects/Project/Project2/AddingOnClick';
 
 export const data: ProjectData[] = [
     {
@@ -10,11 +11,13 @@ export const data: ProjectData[] = [
         button: 'Look',
         buttonId: 'project1',
         event: () => {
-            openAndCloseModal();
 
-            MousePosition(
-                'Pozycja myszki',
-                'sjdfjdsdjsdf llsfdjflskf lgdkfl dglfddlskfjkl dfjklfdsgljk sdlfg ; flkljg; fdldkfsgjgk j lsdfgj jl gfj gljgflj jglfd jlfsg;waq;weqo nj lq/A/GAVGJLDHRBASDZ',
+            openAndCloseModal('content__modal-content-1', 'modal_1', 'buttonId_1');
+            
+            new MousePositionController(
+                '.content__modal-content-1',
+                'MousePosition',
+                'przykładowy opisssss'
             );
         },
         classSection: 'content__projects',
@@ -27,12 +30,8 @@ export const data: ProjectData[] = [
         button: 'Look',
         buttonId: 'project2',
         event: () => {
-            openAndCloseModal();
-
-            MousePosition(
-                '',
-                '',
-            );
+            openAndCloseModal('content__modal-content-2', 'modal_2', 'buttonId_2');
+            // AddingOnClick('.content__modal-content-2');
         },
         classSection: 'content__projects',
     },

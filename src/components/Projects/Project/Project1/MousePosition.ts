@@ -1,44 +1,33 @@
-// 1. dodawanie listenera na body, "mousemove", wyciąganie pozycji myszki (clientX, clientY)
-// 2. Pobierz h1 i wyświetl w niej pozycje myszki
-// 3. Dodaj zmienne i wyciąg wysokość/szerokość okna przeglądarki za pomocą window.inner width/height
-// 3. dodaj styl background na body i dodaj kolor rgb pobrany z eventu
+import { Project } from "../Project";
 
-export default function MousePosition(titleText: string, paragraphText: string): void {
-    const div = document.querySelector(
-        '.content__modal-content',
-    )! as HTMLDivElement;
+export class MousePositionController extends Project {
+    private h4: HTMLHeadingElement;
 
-    div.innerHTML = '';
+    constructor(modalContentSelector: string, h1Txt: string, pTxt: string) {
+        super(modalContentSelector, h1Txt, pTxt);
+        this.h4 = this.createHeadingElement('content__modal-content-h4', 'h4');
+        this.setupMouseMoveListener();
+    }
 
-    const h1 = document.createElement('h1');
-    h1.textContent = titleText;
+    private setupMouseMoveListener(): void {
+        this.div.appendChild(this.h4);
+        
+        this.div.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
 
-    console.log(h1);
+            const widthWindow = window.innerWidth;
+            const heightWindow = window.innerHeight;
 
-    const p: HTMLParagraphElement = document.createElement('p');
-    p.textContent = paragraphText;
+            this.h4.textContent = `${mouseX}   ${mouseY}`;
 
-    div.appendChild(h1);
-    div.appendChild(p);
+            const red = (mouseX / widthWindow) * 100;
+            const green = (mouseY / heightWindow) * 100;
+            const blue =
+                (mouseX / widthWindow) * 100 +
+                ((mouseY / heightWindow) * 100) / 2;
 
-    const h4 = document.createElement('h4');
-
-    div.addEventListener('mousemove', (e) => {
-        const mouseX = e.clientX + 1;
-        const mouseY = e.clientY + 1;
-
-        const widthWindow = window.innerWidth;
-        const heightWindow = window.innerHeight;
-
-        h4.textContent = `${mouseX}   ${mouseY}`;
-
-        const red = (mouseX / widthWindow) * 100;
-        const green = (mouseY / heightWindow) * 100;
-        const blue =
-            (mouseX / widthWindow) * 100 + ((mouseY / heightWindow) * 100) / 2;
-
-        div.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
-    });
-
-    div.appendChild(h4);
+            this.div.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%)`;
+        });
+    }
 }

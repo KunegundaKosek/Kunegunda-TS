@@ -1,12 +1,18 @@
 @import '_variables';
 
-h1 {
-      font-size: $title-size;
-      font-family: $title-font;
-}
+.content {
+    &__modal-content-h1 {
+        font-size: $title-size;
+        font-family: $title-font;
+    }
 
-p {
-      font-size: $default-size;
-      font-family: $default-font;
-      text-transform: lowercase;
+    &__modal-content-p {
+        font-size: $default-size;
+        font-family: $default-font;
+        text-transform: lowercase;
+    }
+
+    &__modal-content-h4 {
+        margin-top: 400px;
+    }
 }

@@ -53,7 +53,7 @@
   right: 10px;
   cursor: pointer;
 }
-.content__modal-content {
+.content__modal-content-1, .content__modal-content-2 {
   background-color: grey;
   position: absolute;
   top: 50%;
@@ -134,15 +134,17 @@
   background-color: #b770b0;
 }
 
-h1 {
+.content__modal-content-h1 {
   font-size: 2.4em;
   font-family: "Rubik", sans-serif;
 }
-
-p {
+.content__modal-content-p {
   font-size: 24px;
   font-family: "Lunasima", sans-serif;
   text-transform: lowercase;
+}
+.content__modal-content-h4 {
+  margin-top: 400px;
 }
 
 .footer {

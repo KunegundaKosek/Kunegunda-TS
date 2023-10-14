@@ -26,7 +26,8 @@
             cursor: pointer;
         }
 
-        &-content {
+        &-content-1,
+        &-content-2 {
             background-color: grey;
             position: absolute;
             top: 50%;
