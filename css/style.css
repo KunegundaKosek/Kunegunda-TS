@@ -53,8 +53,8 @@
   right: 10px;
   cursor: pointer;
 }
-.content__modal-content-1, .content__modal-content-2 {
-  background-color: grey;
+.content__modal-1, .content__modal-2, .content__modal-3 {
+  background-color: #dedde4;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -134,17 +134,53 @@
   background-color: #b770b0;
 }
 
-.content__modal-content-h1 {
+.content__modal-h1 {
   font-size: 2.4em;
   font-family: "Rubik", sans-serif;
 }
-.content__modal-content-p {
+.content__modal-p {
   font-size: 24px;
   font-family: "Lunasima", sans-serif;
   text-transform: lowercase;
 }
-.content__modal-content-h4 {
+.content__modal-mousePosition-h4 {
   margin-top: 400px;
+}
+.content__modal-addingOnClick {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__modal-addingOnClick-button {
+  display: block;
+  width: 20%;
+  margin: auto;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin-top: 35px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-addingOnClick-button:hover {
+  background-color: #b770b0;
+}
+.content__modal-addingOnClick-tile {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #b770b0;
+  margin: 10px;
+  padding-top: 8px;
+}
+.content__modal-addingOnClick-tileDivisibleByFive {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #b770b0;
+  margin: 10px;
+  padding-top: 8px;
 }
 
 .footer {

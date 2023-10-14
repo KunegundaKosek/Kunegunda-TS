@@ -1,7 +1,8 @@
 import { ProjectData } from '../intefaces/data-interface';
 import openAndCloseModal from './function-button-project';
 import { MousePositionController } from '../Projects/Project/Project1/MousePosition';
-// import { AddingOnClick } from '../Projects/Project/Project2/AddingOnClick';
+import { AddingOnClick } from '../Projects/Project/Project2/AddingOnClick';
+
 
 export const data: ProjectData[] = [
     {
@@ -12,12 +13,14 @@ export const data: ProjectData[] = [
         buttonId: 'project1',
         event: () => {
 
-            openAndCloseModal('content__modal-content-1', 'modal_1', 'buttonId_1');
+            openAndCloseModal('content__modal-1', 'modal_1', 'buttonId_1');
             
             new MousePositionController(
-                '.content__modal-content-1',
+                '.content__modal-1',
                 'MousePosition',
-                'przykładowy opisssss'
+                'przykładowy opisssss',
+                'content__modal-mousePosition-h4',
+                'h4'
             );
         },
         classSection: 'content__projects',
@@ -30,19 +33,34 @@ export const data: ProjectData[] = [
         button: 'Look',
         buttonId: 'project2',
         event: () => {
-            openAndCloseModal('content__modal-content-2', 'modal_2', 'buttonId_2');
+            openAndCloseModal('content__modal-2', 'modal_2', 'buttonId_2');
             // AddingOnClick('.content__modal-content-2');
         },
         classSection: 'content__projects',
     },
 
     {
-        title: 'Project 3',
+        title: 'Adding on click',
         src: './image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project3',
-        event: () => {},
+        event: () => {
+
+            openAndCloseModal('content__modal-3', 'modal_3', 'buttonId_3');
+
+            new AddingOnClick(
+                '.content__modal-3',
+                'Adding on click',
+                'Click click click click click click',
+                'content__modal-addingOnClick-button',
+                'click',
+                'buttonAddingOnClick',
+                'content__modal-addingOnClick',
+                'content__modal-addingOnClick-tile',
+                'content__modal-addingOnClick-tileDivisibleByFive'
+            )
+        },
         classSection: 'content__projects',
     },
 

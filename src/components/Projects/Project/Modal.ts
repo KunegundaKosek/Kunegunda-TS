@@ -24,13 +24,12 @@ export default class Modal {
 
       private createDivModalContent(): HTMLDivElement {
             const divModalContent = document.createElement('div');
-            divModalContent.className = this.divModalContentClass; //!!!!!!!!!!!!!!!!!!!!!!!!
+            divModalContent.className = this.divModalContentClass;
             return divModalContent;
       }
 
       private setupModal(): void {
             const main = document.querySelector('main')! as HTMLElement;
-            console.log(main);
 
             const button = document.createElement('i');
             button.className = this.spanClass;

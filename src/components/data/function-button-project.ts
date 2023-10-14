@@ -2,7 +2,7 @@ import Modal from '../Projects/Project/Modal';
 
 export default function openAndCloseModal(className: string, id: string, buttonId: string) {
 
-    const x = new Modal(
+    new Modal(
         'content__modal',
         id,
         className,
@@ -10,21 +10,20 @@ export default function openAndCloseModal(className: string, id: string, buttonI
         buttonId,
     );
 
-    console.log(x);
 
     const modal = document.getElementById(id)! as HTMLDivElement;
 
     const button = document.getElementById(
-        buttonId,
+        buttonId
     )! as HTMLButtonElement;
-    console.log(button);
 
     if (modal.style.display === 'none') {
         modal.style.display = 'block';
     }
 
     button.addEventListener('click', () => {
-        modal.style.display = 'none';
+        // modal.style.display = 'none';
+        modal.remove();
     });
 
 }

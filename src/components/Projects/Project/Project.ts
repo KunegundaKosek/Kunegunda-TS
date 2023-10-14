@@ -1,4 +1,4 @@
-export class Project {
+export abstract class Project {
       protected div: HTMLDivElement;
       private h1: HTMLHeadingElement;
       private p: HTMLParagraphElement;
@@ -9,8 +9,8 @@ export class Project {
           private pTxt: string,
       ) {
           this.div = this.getModalContentElement();
-          this.h1 = this.createHeadingElement('content__modal-content-h1', 'h1');
-          this.p = this.createParagraphElement('content__modal-content-p');
+          this.h1 = this.createHeadingElement('content__modal-h1', 'h1');
+          this.p = this.createParagraphElement('content__modal-p');
   
           this.h1.textContent = this.h1Txt;
           this.p.textContent = this.pTxt;

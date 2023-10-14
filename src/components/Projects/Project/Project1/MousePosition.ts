@@ -3,9 +3,10 @@ import { Project } from "../Project";
 export class MousePositionController extends Project {
     private h4: HTMLHeadingElement;
 
-    constructor(modalContentSelector: string, h1Txt: string, pTxt: string) {
+    constructor(modalContentSelector: string, h1Txt: string, pTxt: string, h4ClassName: string, selector: string) {
         super(modalContentSelector, h1Txt, pTxt);
-        this.h4 = this.createHeadingElement('content__modal-content-h4', 'h4');
+            
+        this.h4 = this.createHeadingElement(h4ClassName, selector);
         this.setupMouseMoveListener();
     }
 
