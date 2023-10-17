@@ -11,6 +11,44 @@
 .content__modal-mousePosition-h4 {
   margin-top: 400px;
 }
+.content__modal-clicker-h4 {
+  color: #2f3541;
+  margin: 20px;
+  font-size: 2.4em;
+}
+.content__modal-clicker-container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.content__modal-clicker-inputContainer {
+  border: 2px solid #b770b0;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.content__modal-clicker-inputContainer select {
+  width: 50px;
+  height: 50px;
+}
+.content__modal-clicker-inputContainer input {
+  width: 50px;
+  height: 50px;
+}
+.content__modal-clicker-square {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #b770b0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.content__modal-clicker-square:hover {
+  background-color: #b770b0;
+}
 .content__modal-addingOnClick {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +61,7 @@
   background-color: #dedde4;
   cursor: pointer;
   padding: 20px 0;
-  margin-top: 35px;
+  margin: 35px auto;
   transition: 0.4s;
   border-radius: 10px;
 }

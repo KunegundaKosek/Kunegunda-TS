@@ -1,8 +1,8 @@
 import { ProjectData } from '../intefaces/data-interface';
 import openAndCloseModal from './function-button-project';
 import { MousePositionController } from '../Projects/Project/Project1/MousePosition';
-import { AddingOnClick } from '../Projects/Project/Project2/AddingOnClick';
-
+import { AddingOnClick } from '../Projects/Project/Project3/AddingOnClick';
+import { Clicker } from '../Projects/Project/Project2/Clicker';
 
 export const data: ProjectData[] = [
     {
@@ -12,29 +12,34 @@ export const data: ProjectData[] = [
         button: 'Look',
         buttonId: 'project1',
         event: () => {
-
             openAndCloseModal('content__modal-1', 'modal_1', 'buttonId_1');
-            
+
             new MousePositionController(
                 '.content__modal-1',
                 'MousePosition',
                 'przykładowy opisssss',
                 'content__modal-mousePosition-h4',
-                'h4'
+                'h4',
             );
         },
         classSection: 'content__projects',
     },
 
     {
-        title: 'Project 2',
+        title: 'Clicker',
         src: './image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project2',
         event: () => {
             openAndCloseModal('content__modal-2', 'modal_2', 'buttonId_2');
-            // AddingOnClick('.content__modal-content-2');
+
+            new Clicker(
+                '.content__modal-2',
+                'Clicker',
+                'Click Click Click Click Click ClickClick Click ClickClick',
+                'content__modal-clicker-h4',
+            );
         },
         classSection: 'content__projects',
     },
@@ -46,7 +51,6 @@ export const data: ProjectData[] = [
         button: 'Look',
         buttonId: 'project3',
         event: () => {
-
             openAndCloseModal('content__modal-3', 'modal_3', 'buttonId_3');
 
             new AddingOnClick(
@@ -58,8 +62,10 @@ export const data: ProjectData[] = [
                 'buttonAddingOnClick',
                 'content__modal-addingOnClick',
                 'content__modal-addingOnClick-tile',
-                'content__modal-addingOnClick-tileDivisibleByFive'
-            )
+                'content__modal-addingOnClick-tileDivisibleByFive',
+                0,
+                1,
+            );
         },
         classSection: 'content__projects',
     },

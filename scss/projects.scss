@@ -1,7 +1,6 @@
 @import '_variables';
 
 .content {
-
     // Mouse Position { Project 1 }
     &__modal-h1 {
         font-size: $title-size;
@@ -16,6 +15,53 @@
 
     &__modal-mousePosition-h4 {
         margin-top: 400px;
+    }
+
+    // Clicker { Project 2 }
+
+    &__modal-clicker-h4 {
+        color: $font-color;
+        margin: 20px;
+        font-size: $title-size;
+    }
+
+    &__modal-clicker-container {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    &__modal-clicker-inputContainer {
+        border: 2px solid #b770b0;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+
+        select {
+            width: 50px;
+            height: 50px;
+        }
+
+        input {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__modal-clicker-square {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px solid #b770b0;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        &:hover {
+            background-color: $bar-color;
+        }
     }
 
     // Adding on click { Project 3 }
@@ -33,7 +79,7 @@
         background-color: $background-color;
         cursor: pointer;
         padding: 20px 0;
-        margin-top: 35px;
+        margin: 35px auto;
         transition: 0.4s;
         border-radius: 10px;
 
