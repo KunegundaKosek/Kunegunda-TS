@@ -84,4 +84,24 @@
   color: #b770b0;
   margin: 10px;
   padding-top: 8px;
+}
+.content__modal-resizableText-btn {
+  display: inline;
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 35px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-resizableText-btn:hover {
+  background-color: #b770b0;
+}
+.content__modal-resizableText-ul {
+  list-style: none;
+}
+.content__modal-resizableText-btn + .content__modal-resizableText-btn {
+  margin-left: 20px;
 }/*# sourceMappingURL=projects.css.map */

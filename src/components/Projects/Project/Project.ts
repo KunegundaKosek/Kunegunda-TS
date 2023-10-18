@@ -38,7 +38,7 @@ export abstract class Project {
           return paragraph;
       }
   
-      private setupElements(): void {
+      protected setupElements(): void {
           this.div.appendChild(this.h1);
           this.div.appendChild(this.p);
       }

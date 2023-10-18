@@ -3,6 +3,7 @@ import openAndCloseModal from './function-button-project';
 import { MousePositionController } from '../Projects/Project/Project1/MousePosition';
 import { AddingOnClick } from '../Projects/Project/Project3/AddingOnClick';
 import { Clicker } from '../Projects/Project/Project2/Clicker';
+import { ResizableText } from '../Projects/Project/Project4/ResizableText';
 
 export const data: ProjectData[] = [
     {
@@ -76,7 +77,10 @@ export const data: ProjectData[] = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project4',
-        event: () => {},
+        event: () => {
+            openAndCloseModal('content__modal-4', 'modal_4', 'buttonId_4');
+            new ResizableText('.content__modal-4', 'Resizable Text', 'txt txttxt txt txt txt txttxt txt txt', 'content__modal-resizableText-ul', 'Plus 1px', 'Size 10px', 'content__modal-resizableText-btn');
+        },
         classSection: 'content__projects',
     },
 
