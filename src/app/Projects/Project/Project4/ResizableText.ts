@@ -1,40 +1,3 @@
-// export function ResizableText(divClassName: string) {
-//     const div = document.querySelector(divClassName)! as HTMLButtonElement;
-//     console.log(div);
-//     const buttonPlus: HTMLButtonElement = document.createElement('button');
-//     buttonPlus.textContent = 'Plus 1px';
-//     const button10px: HTMLButtonElement = document.createElement('button');
-//     button10px.textContent = 'Size 10px';
-
-//     const ul: HTMLUListElement = document.createElement('ul');
-
-//     const arrayElements: string[] = [];
-
-//     for (let i = 1; i <= 10; ++i) {
-//         arrayElements.push(`Element - ${i}`);
-//     }
-
-//     arrayElements.forEach((element) => {
-//         const ol: HTMLOListElement = document.createElement('ol');
-//         ol.textContent = element;
-//         ul.appendChild(ol);
-//     });
-
-//     div.append(buttonPlus, button10px, ul);
-
-//     let fontSize = 10;
-
-//     buttonPlus.addEventListener('click', () => {
-//         fontSize += 1;
-//         ul.style.fontSize = `${fontSize}px`;
-//     });
-
-//     button10px.addEventListener('click', () => {
-//       fontSize = 11;
-//       ul.style.fontSize = '10px';
-//     })
-// }
-
 import { Project } from '../Project';
 
 export class ResizableText extends Project {
@@ -43,7 +6,15 @@ export class ResizableText extends Project {
     private ul: HTMLUListElement;
     private fontSize: number = 10;
 
-    constructor(modalContentSelector: string, h1Txt: string, pTxt: string, ulClassName: string, buttonPlusTxt: string, button10pxTxt: string, buttonClassName: string) {
+    constructor(
+        modalContentSelector: string,
+        h1Txt: string,
+        pTxt: string,
+        ulClassName: string,
+        buttonPlusTxt: string,
+        button10pxTxt: string,
+        buttonClassName: string,
+    ) {
         super(modalContentSelector, h1Txt, pTxt);
 
         this.buttonPlus = this.createButton(buttonPlusTxt, buttonClassName);
@@ -55,7 +26,10 @@ export class ResizableText extends Project {
         this.setupEventListener();
     }
 
-    private createButton(text: string, buttonClassName: string): HTMLButtonElement {
+    private createButton(
+        text: string,
+        buttonClassName: string,
+    ): HTMLButtonElement {
         const button = document.createElement('button');
         button.className = buttonClassName;
         button.textContent = text;

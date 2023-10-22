@@ -1,7 +1,7 @@
-import HomePage from './components/Home/HomePage';
-import Navigation from './components/Nav/Nav';
-import ProjectPage from './components/Projects/ProjectPage';
-import { data, tile } from './components/data/data';
+import HomePage from './app/Home/HomePage';
+import Navigation from './app/Nav/Nav';
+import ProjectPage from './app/Projects/ProjectPage';
+import { data, tile } from './app/data/data';
 
 new Navigation('KUNEGUNDA', tile, 'fa-solid fa-computer');
 // const text =

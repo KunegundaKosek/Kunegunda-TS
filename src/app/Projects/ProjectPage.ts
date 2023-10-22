@@ -22,6 +22,14 @@ export default class ProjectPage {
         this.render();
     }
 
+    public getClassSection(): string {
+        return this.classSection;
+    }
+
+    public getProjects(): Project[] {
+        return this.projects;
+    }
+
     public render(): void {
         const main = document.getElementById('main')! as HTMLElement;
 

@@ -41,7 +41,6 @@ export default class Project {
         image.alt = this.title;
         tile.appendChild(image);
 
-
         const description = document.createElement('p');
         description.textContent = this.text;
         tile.appendChild(description);

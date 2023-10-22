@@ -132,4 +132,45 @@
     &__modal-resizableText-btn + &__modal-resizableText-btn {
         margin-left: 20px;
     }
+
+    // Calculator { Project 5 }
+
+    &__modal-calculator {
+        display: flex;
+    }
+
+    &__modal-calculator-number {
+        // display: inline;
+        width: 20%;
+        // margin: 20px;
+        border: 2px solid $bar-color;
+        background-color: $background-color;
+        cursor: pointer;
+        padding: 20px 0;
+        margin: 35px auto;
+        transition: 0.4s;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $bar-color;
+        }
+    }
+
+    &__modal-calculator-operator {
+        // display: inline;
+        width: 100px;
+        height: 100px;
+        // margin: 20px;
+        border: 2px solid $bar-color;
+        background-color: $background-color;
+        cursor: pointer;
+        padding: 20px 0;
+        margin: 35px auto;
+        transition: 0.4s;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: $bar-color;
+        }
+    }
 }
