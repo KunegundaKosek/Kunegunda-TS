@@ -2,17 +2,18 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.ts',
+    // entry: './src/index.ts',
+    entry: './public/src/index.ts',
     devServer: {
         static: [
             {
-                directory: path.join(__dirname),
+                directory: path.join(__dirname, 'public'),
             },
         ],
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist', 'public/dist'),
         publicPath: '/dist/',
     },
     devtool: 'inline-source-map',

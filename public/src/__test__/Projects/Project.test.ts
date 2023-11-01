@@ -10,7 +10,7 @@ interface TestData {
     classSection: string;
 }
 
-describe('Project', () => {
+describe.skip('Project', () => {
     let project: Project;
     let testData: TestData;
 

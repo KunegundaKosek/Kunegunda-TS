@@ -114,6 +114,25 @@ export const data: ProjectData[] = [
         },
         classSection: 'content__projects',
     },
+
+    {
+        title: 'Project 6',
+        src: './image/picture1.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        button: 'Look',
+        buttonId: 'project6',
+        event: () => {
+            openAndCloseModal(
+                'content__modal-5',
+                'modal_quiz',
+                'buttonId_quiz',
+            );
+
+            
+
+        },
+        classSection: 'content__projects',
+    },
 ];
 
 export const tile: string[] = ['home', 'project', 'contact'];

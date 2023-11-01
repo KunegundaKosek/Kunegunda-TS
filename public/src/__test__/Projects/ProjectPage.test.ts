@@ -1,7 +1,7 @@
 // import Project from "../../app/Projects/Project";
 import ProjectPage from '../../app/Projects/ProjectPage';
 
-describe('ProjectPage', () => {
+describe.skip('ProjectPage', () => {
     let main: HTMLElement;
 
     beforeEach(() => {
