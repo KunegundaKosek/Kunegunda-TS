@@ -52,7 +52,7 @@
   right: 10px;
   cursor: pointer;
 }
-.content__modal-1, .content__modal-2, .content__modal-3, .content__modal-4, .content__modal-5 {
+.content__modal-1, .content__modal-2, .content__modal-3, .content__modal-4, .content__modal-5, .content__modal-6, .content__modal-wordDivision {
   background-color: #dedde4;
   position: absolute;
   top: 50%;
@@ -268,6 +268,36 @@
 }
 .content__modal-calculator-operator:hover {
   background-color: #b770b0;
+}
+.content__modal-wordDivision input {
+  width: 50%;
+  border: 3px solid #b770b0;
+  margin: 40px;
+  padding: 10px 20px;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 24px;
+}
+.content__modal-wordDivision input:focus {
+  border: 5px solid #72516c;
+}
+.content__modal-wordDivision button {
+  display: block;
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-wordDivision button:hover {
+  background-color: #b770b0;
+}
+.content__modal-wordDivision div > h3 {
+  font-size: 1.7em;
+  font-family: "Rubik", sans-serif;
 }
 
 .footer {

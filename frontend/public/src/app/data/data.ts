@@ -5,6 +5,8 @@ import { AddingOnClick } from '../Projects/Project/Project3/AddingOnClick';
 import { Clicker } from '../Projects/Project/Project2/Clicker';
 import { ResizableText } from '../Projects/Project/Project4/ResizableText';
 import { Calculator } from '../Projects/Project/Project5/Calculator';
+import { ProgrammingGame } from '../Projects/Project/Project6/ProgrammingGame';
+import { WordDivision } from '../Projects/Project/Project7/WordDivision';
 
 export const data: ProjectData[] = [
     {
@@ -73,7 +75,7 @@ export const data: ProjectData[] = [
     },
 
     {
-        title: 'Project 4',
+        title: 'Resizable text',
         src: './image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
@@ -94,7 +96,7 @@ export const data: ProjectData[] = [
     },
 
     {
-        title: 'Project 5',
+        title: 'Calculator',
         src: './image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
@@ -123,13 +125,30 @@ export const data: ProjectData[] = [
         buttonId: 'project6',
         event: () => {
             openAndCloseModal(
-                'content__modal-5',
+                'content__modal-6',
                 'modal_quiz',
                 'buttonId_quiz',
             );
 
-            
+            ProgrammingGame();
+        },
+        classSection: 'content__projects',
+    },
 
+    {
+        title: 'Word Division',
+        src: './image/picture1.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        button: 'Look',
+        buttonId: 'project6',
+        event: () => {
+            openAndCloseModal(
+                'content__modal-wordDivision',
+                'modal_wordDivision',
+                'buttonId_wordDivision',
+            );
+
+            new WordDivision('.content__modal-wordDivision', 'Word Division', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s');
         },
         classSection: 'content__projects',
     },
