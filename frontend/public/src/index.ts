@@ -6,7 +6,9 @@ import { data, tile } from './app/data/data';
 export class App {
     constructor() {
         this.initialize();
-        this.renderProjectPage();
+        // this.renderProjectPage();
+        this.renderHomePage();
+        console.error('Próba');
     }
 
     initialize() {
@@ -35,10 +37,6 @@ export class App {
             alert('dodaj metodę renderContactPage()!');
         });
     }
-
-    // private page() {
-
-    // }
 
     private renderProjectPage() {
         const main = document.getElementById('main');
