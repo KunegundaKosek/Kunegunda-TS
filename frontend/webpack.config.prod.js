@@ -34,6 +34,7 @@
 
 const path = require('path');
 const CleanPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -54,5 +55,10 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js'],
     },
-    plugins: [new CleanPlugin.CleanWebpackPlugin()],
+    plugins: [
+        new CleanPlugin.CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: './public/src/index.html',
+        })
+    ],
 };
