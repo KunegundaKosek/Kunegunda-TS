@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "homepage": "https://kunegundakosek.github.io/Kunegunda-TS/",
-    "main": "index.html",
+    "main": "dist/index.html",
     "scripts": {
         "test": "jest",
         "coverage": "istanbul cover -x **/__test__/** jest -- --coverage",

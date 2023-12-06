@@ -14,7 +14,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Cash Point',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project7',
@@ -31,7 +31,7 @@ export const data: ProjectData[] = [
     },
     {
         title: 'Retrieving mouse position',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'In this project, the background for the div will be selected based on the mouse position.',
         button: 'Look',
         buttonId: 'project1',
@@ -51,7 +51,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Clicker',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project2',
@@ -70,7 +70,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Adding on click',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project3',
@@ -96,7 +96,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Resizable text',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project4',
@@ -117,7 +117,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Calculator',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project5',
@@ -139,7 +139,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Project 6',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project6',
@@ -157,7 +157,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Word Division',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project6',
@@ -175,7 +175,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Vending machine with drinks',
-        src: './image/picture1.png',
+        src: '../image/picture1.png',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         button: 'Look',
         buttonId: 'project7',
