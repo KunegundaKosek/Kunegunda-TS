@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
 .content__modal {
-  display: none;
   position: fixed;
   top: 120px;
   left: 20px;
   right: 20px;
   width: calc(98% - 40px);
-  height: 90vh;
+  height: 80vh;
   background-color: pink;
   border-radius: 10px;
 }
@@ -15,8 +15,8 @@
   right: 10px;
   cursor: pointer;
 }
-.content__modal-content {
-  background-color: grey;
+.content__modal-1, .content__modal-2, .content__modal-3, .content__modal-4, .content__modal-5, .content__modal-6, .content__modal-wordDivision, s .content__modal-vending, .content__modal-cashpoint {
+  background-color: #dedde4;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,4 +27,5 @@
   width: 90%;
   height: 90%;
   overflow: scroll;
+  font-size: 24px;
 }/*# sourceMappingURL=modal.css.map */

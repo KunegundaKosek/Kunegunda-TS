@@ -30,9 +30,11 @@
             display: flex;
             flex-basis: 45%;
             margin: 30px auto;
-            flex-wrap: wrap;
-            border: 1px solid $bar-color;
+            /* flex-wrap: wrap; */
+            border: 1px solid #b770b0;
             border-radius: 10px;
+            transition: 0.4s;
+            flex-direction: column;
 
             transition: 0.4s;
             &:hover {

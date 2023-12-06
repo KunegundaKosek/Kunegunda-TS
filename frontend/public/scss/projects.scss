@@ -210,4 +210,150 @@
             font-family: $title-font;
         }
     }
+
+    // Project 7
+    &__modal-vending {
+        div {
+            button {
+                display: inline;
+                width: 20%;
+                border: 2px solid $bar-color;
+                background-color: $background-color;
+                cursor: pointer;
+                padding: 20px 0;
+                margin: 10px auto;
+                transition: 0.4s;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $bar-color;
+                }
+
+                &:disabled {
+                    background-color: $font-color;
+                }
+            }
+        }
+
+        &-lack {
+            color: red;
+            font-weight: 900;
+        }
+    }
+
+    // Project 8
+
+    &__modal-cashpoint {
+        input {
+            display: inline;
+            width: 20%;
+            border: 2px solid #b770b0;
+            background-color: #dedde4;
+            cursor: pointer;
+            padding: 20px 0;
+            margin: 10px auto;
+            transition: 0.4s;
+            border-radius: 10px;
+            font-weight: 900;
+            font-size: $default-size;
+            padding: 15px;
+            text-align: center;
+        }
+
+        input[type='button'] {
+            width: 5%;
+
+            &:hover {
+                background-color: $bar-color;
+            }
+        }
+
+        input:disabled {
+            width: 5%;
+
+            &:hover {
+                background-color: #dedde4;
+            }
+        }
+
+        &-box {
+            display: block;
+            margin: 10px;
+
+            :nth-child(1) {
+                background-color: #874b0f;
+            }
+
+            :nth-child(2) {
+                background-color: #c0c0c0;
+            }
+
+            :nth-child(3) {
+                background-color: #ffd700;
+            }
+
+            button {
+                font-family: $special-font;
+                font-size: calc(#{$title-size} / 2);
+                width: 20%;
+                height: 150px;
+                background-color: $background-color;
+                cursor: pointer;
+                padding: 20px 0;
+                margin: 10px auto;
+                transition: 0.4s;
+                border-radius: 10px;
+                margin: 20px;
+
+                &:hover {
+                    filter: saturate(50%);
+                }
+            }
+        }
+
+        &-display {
+            width: 50%;
+            // height: 50%;
+            border: 2px solid black;
+            background-color: white;
+            margin: 20px auto;
+
+            input {
+                width: 20%;
+                border: 2px solid #b770b0;
+                background-color: #dedde4;
+                cursor: pointer;
+                padding: 20px 0;
+                margin: 10px auto;
+                transition: 0.4s;
+                border-radius: 10px;
+                font-weight: 900;
+                font-size: $default-size;
+                padding: 15px;
+                text-align: center;
+            }
+
+            input[type="button"] {
+                width: 20%;
+            }
+            p {
+                margin: 30px;
+                padding: 25px;
+            }
+            div {
+                margin: 30px 10px;
+                div {
+                    display: block;
+                    width: 80%;
+                    border: 2px solid $bar-color;
+                    background-color: $background-color;
+                    cursor: pointer;
+                    padding: 20px 0;
+                    margin: 10px auto;
+                    transition: 0.4s;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }

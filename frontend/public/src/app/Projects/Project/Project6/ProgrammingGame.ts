@@ -1,13 +1,3 @@
-// import { Project } from '../Project';
-
-// export class ProgrammingGame extends Project {
-
-//       constructor(modalContentSelector: string, h1Txt: string, pTxt: string) {
-//             super(modalContentSelector, h1Txt, pTxt);
-//       };
-
-// }
-
 export function ProgrammingGame() {
     const div = document.querySelector('.content__modal-6') as HTMLDivElement;
 

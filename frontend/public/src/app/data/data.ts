@@ -7,8 +7,28 @@ import { ResizableText } from '../Projects/Project/Project4/ResizableText';
 import { Calculator } from '../Projects/Project/Project5/Calculator';
 import { ProgrammingGame } from '../Projects/Project/Project6/ProgrammingGame';
 import { WordDivision } from '../Projects/Project/Project7/WordDivision';
+import { VendingMachine } from '../Projects/Project/Project8/VendingMachine';
+import { CashPoint } from '../Projects/Project/Project9/CashPoint';
 
 export const data: ProjectData[] = [
+
+    {
+        title: 'Cash Point',
+        src: './image/picture1.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        button: 'Look',
+        buttonId: 'project7',
+        event: () => {
+            openAndCloseModal(
+                'content__modal-cashpoint',
+                'modal_cashpoint',
+                'buttonId_cashpoint',
+            );
+
+            CashPoint('.content__modal-cashpoint');
+        },
+        classSection: 'content__projects',
+    },
     {
         title: 'Retrieving mouse position',
         src: './image/picture1.png',
@@ -152,6 +172,27 @@ export const data: ProjectData[] = [
         },
         classSection: 'content__projects',
     },
+
+    {
+        title: 'Vending machine with drinks',
+        src: './image/picture1.png',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        button: 'Look',
+        buttonId: 'project7',
+        event: () => {
+            openAndCloseModal(
+                'content__modal-vending',
+                'modal_vending',
+                'buttonId_vending',
+            );
+
+            new VendingMachine('.content__modal-vending', 'Vending machine', 'Choose a drink')
+
+        },
+        classSection: 'content__projects',
+    },
+
+
 ];
 
 export const tile: string[] = ['home', 'project', 'contact'];

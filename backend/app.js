@@ -1,14 +1,16 @@
 const express = require('express');
 const path = require('path');
 const gameRoutes = require('./routes/game');
-
-console.log(gameRoutes)
+const port = process.env.PORT || 3000;
+console.log(gameRoutes);
 
 const app = express();
 
-app.listen(3000, () => {
-      console.log('Servers is listening at http://localhost:3000 Let\'s play a game!');
-} );
+app.listen(port, () => {
+    console.log(
+        "Servers is listening at http://localhost:3000 Let's play a game!",
+    );
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 

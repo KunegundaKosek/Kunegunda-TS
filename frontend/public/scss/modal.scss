@@ -1,5 +1,6 @@
-.content {
+@import '_variables';
 
+.content {
     &__modal {
         // display: none;
         // position: fixed;
@@ -33,7 +34,9 @@
         &-4,
         &-5,
         &-6,
-        &-wordDivision {
+        &-wordDivision,
+        s &-vending,
+        &-cashpoint {
             background-color: $background-color;
             position: absolute;
             top: 50%;
@@ -47,7 +50,5 @@
             overflow: scroll;
             font-size: $default-size;
         }
-
-        
     }
 }
