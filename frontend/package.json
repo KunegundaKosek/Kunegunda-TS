@@ -2,7 +2,8 @@
     "name": "page",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "homepage": "https://kunegundakosek.github.io/Kunegunda-TS/",
+    "main": "index.html",
     "scripts": {
         "test": "jest",
         "coverage": "istanbul cover -x **/__test__/** jest -- --coverage",
