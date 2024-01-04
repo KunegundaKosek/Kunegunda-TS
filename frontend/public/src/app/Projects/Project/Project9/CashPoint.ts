@@ -97,6 +97,7 @@ export function CashPoint(divClassName: string) {
             paycheck.textContent = 'CASH WITHDRAWAL';
             paycheck.id = 'paycheck';
 
+// zmień PIN
             const PINChange: HTMLDivElement = document.createElement('div');
             PINChange.className = 'content__modal-cashback-cardOption';
             PINChange.id = 'pinChange';
@@ -157,6 +158,9 @@ export function CashPoint(divClassName: string) {
                                     inputCashDeposit.style.display = 'none';
                                     btnCashDeposit.style.display = 'none';
 
+
+
+                                    
                                     if (
                                         Number(inputCashDeposit.value) % 10 ===
                                         0
@@ -298,7 +302,7 @@ export function CashPoint(divClassName: string) {
             });
 
             paycheck.addEventListener('click', () => {
-                  console.log('paycheck click')
+                  console.log('paycheck click');
                 input.removeAttribute('disabled');
                 if (buttonOK.hasAttribute('disabled')) {
                     buttonOK.removeAttribute('disabled');
@@ -310,7 +314,7 @@ export function CashPoint(divClassName: string) {
                     PINChange,
                     cashPointInfo,
                     card,
-                    'Podaj kwotę wpłaty123123',
+                    'Podaj kwotę wpłaty',
                 );
             });
 
@@ -341,3 +345,5 @@ export function CashPoint(divClassName: string) {
     display.append(cashPointInfo, saldoInfo, containerOption);
     div.append(display);
 }
+
+

@@ -11,11 +11,10 @@ import { VendingMachine } from '../Projects/Project/Project8/VendingMachine';
 import { CashPoint } from '../Projects/Project/Project9/CashPoint';
 
 export const data: ProjectData[] = [
-
     {
-        title: 'Cash Point',
+        title: 'ATM App - Your All-in-One Banking Solution',
         src: '../image/picture1.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'With this application, you can make deposits, withdraw cash, and update your PIN, providing full control over your accounts. Choose from three different card options, each tailored to various financial needs.',
         button: 'Look',
         buttonId: 'project7',
         event: () => {
@@ -30,9 +29,9 @@ export const data: ProjectData[] = [
         classSection: 'content__projects',
     },
     {
-        title: 'Retrieving mouse position',
+        title: 'Dynamic Mouse-Position-Based Background Color Changer',
         src: '../image/picture1.png',
-        text: 'In this project, the background for the div will be selected based on the mouse position.',
+        text: 'This simple yet engaging application transforms your desktop experience by responding to the real-time movement of the mouse, creating a unique and personalized display. Explore the seamless transition of colors as you navigate, adding an interactive and visually appealing touch to your computing environment.',
         button: 'Look',
         buttonId: 'project1',
         event: () => {
@@ -50,9 +49,9 @@ export const data: ProjectData[] = [
     },
 
     {
-        title: 'Clicker',
+        title: 'Interactive Clicker App',
         src: '../image/picture1.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'A captivating and straightforward application that turns every click into a dynamic mathematical operation. Each element within the designated square bears a numeric value, and upon clicking, the app instantly performs the corresponding operation on the cumulative total displayed at the top. Immerse yourself in an engaging clicker experience that not only keeps track of your actions but also challenges you to strategically accumulate points. ',
         button: 'Look',
         buttonId: 'project2',
         event: () => {
@@ -69,9 +68,9 @@ export const data: ProjectData[] = [
     },
 
     {
-        title: 'Adding on click',
+        title: ' Dynamic Number Display App',
         src: '../image/picture1.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'With each button click, a series of numbers unfolds on your screen. What sets this app apart is its intriguing twist – whenever a displayed number is divisible by 5, its appearance transforms.',
         button: 'Look',
         buttonId: 'project3',
         event: () => {
@@ -95,9 +94,9 @@ export const data: ProjectData[] = [
     },
 
     {
-        title: 'Resizable text',
+        title: 'Text Size Modifier App',
         src: '../image/picture1.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'Introducing the Text Size Modifier App, where every click on the "Plus 1px" button elevates the text size by 1 pixel. Designed for precision, this application allows you to finely adjust the text size according to your preferences. Additionally, you have the flexibility to set the text size to a base value of 10 pixels. ',
         button: 'Look',
         buttonId: 'project4',
         event: () => {
@@ -168,7 +167,11 @@ export const data: ProjectData[] = [
                 'buttonId_wordDivision',
             );
 
-            new WordDivision('.content__modal-wordDivision', 'Word Division', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s');
+            new WordDivision(
+                '.content__modal-wordDivision',
+                'Word Division',
+                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+            );
         },
         classSection: 'content__projects',
     },
@@ -186,13 +189,14 @@ export const data: ProjectData[] = [
                 'buttonId_vending',
             );
 
-            new VendingMachine('.content__modal-vending', 'Vending machine', 'Choose a drink')
-
+            new VendingMachine(
+                '.content__modal-vending',
+                'Vending machine',
+                'Choose a drink',
+            );
         },
         classSection: 'content__projects',
     },
-
-
 ];
 
 export const tile: string[] = ['home', 'project', 'contact'];

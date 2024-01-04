@@ -6,9 +6,8 @@ import { data, tile } from './app/data/data';
 export class App {
     constructor() {
         this.initialize();
-        // this.renderProjectPage();
-        this.renderHomePage();
-        console.error('Próba');
+        this.renderProjectPage();
+        // this.renderHomePage();
     }
 
     initialize() {

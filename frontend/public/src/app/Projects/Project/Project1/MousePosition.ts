@@ -22,6 +22,7 @@ export class MousePositionController extends Project {
 
             this.h4.textContent = `${mouseX}   ${mouseY}`;
 
+            
             const red = (mouseX / widthWindow) * 100;
             const green = (mouseY / heightWindow) * 100;
             const blue =
