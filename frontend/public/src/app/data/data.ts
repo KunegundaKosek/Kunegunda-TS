@@ -4,11 +4,11 @@ import { MousePositionController } from '../Projects/Project/Project1/MousePosit
 import { AddingOnClick } from '../Projects/Project/Project3/AddingOnClick';
 import { Clicker } from '../Projects/Project/Project2/Clicker';
 import { ResizableText } from '../Projects/Project/Project4/ResizableText';
-import { Calculator } from '../Projects/Project/Project5/Calculator';
 import { ProgrammingGame } from '../Projects/Project/Project6/ProgrammingGame';
 import { WordDivision } from '../Projects/Project/Project7/WordDivision';
 import { VendingMachine } from '../Projects/Project/Project8/VendingMachine';
 import { CashPoint } from '../Projects/Project/Project9/CashPoint';
+import { Converter } from '../Projects/Project/Project10/Converter';
 
 export const data: ProjectData[] = [
     {
@@ -114,27 +114,27 @@ export const data: ProjectData[] = [
         classSection: 'content__projects',
     },
 
-    {
-        title: 'Calculator',
-        src: '../image/picture1.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        button: 'Look',
-        buttonId: 'project5',
-        event: () => {
-            openAndCloseModal(
-                'content__modal-5',
-                'modal_calculator',
-                'buttonId_calculator',
-            );
+    // {
+    //     title: 'Calculator',
+    //     src: '../image/picture1.png',
+    //     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    //     button: 'Look',
+    //     buttonId: 'project5',
+    //     event: () => {
+    //         openAndCloseModal(
+    //             'content__modal-5',
+    //             'modal_calculator',
+    //             'buttonId_calculator',
+    //         );
 
-            Calculator(
-                '.content__modal-5',
-                'content__modal-calculator-number',
-                'content__modal-calculator-operator',
-            );
-        },
-        classSection: 'content__projects',
-    },
+    //         Calculator(
+    //             '.content__modal-5',
+    //             'content__modal-calculator-number',
+    //             'content__modal-calculator-operator',
+    //         );
+    //     },
+    //     classSection: 'content__projects',
+    // },
 
     {
         title: 'Project 6',
@@ -194,6 +194,24 @@ export const data: ProjectData[] = [
                 'Vending machine',
                 'Choose a drink',
             );
+        },
+        classSection: 'content__projects',
+    },
+
+    {
+        title: 'Dynamic Unit Converter: Effortless Conversions Across Multiple Unit Categories',
+        src: '../image/picture1.png',
+        text: 'This mini project utilizes the "convert-units" library to create a unit converter. The user inputs a numerical value, and the application converts it into various units. The supported unit categories include Length, Area, Mass, Volume, Temperature, Time and Speed.  The application dynamically displays the converted values for all units within the selected category, offering a versatile and user-friendly unit conversion tool.',
+        button: 'Look',
+        buttonId: 'project7',
+        event: () => {
+            openAndCloseModal(
+                'content__modal-converter',
+                'modal_converter',
+                'buttonId_converter',
+            );
+
+            new Converter('.content__modal-converter', 'Wybierz jednostkę', '');
         },
         classSection: 'content__projects',
     },

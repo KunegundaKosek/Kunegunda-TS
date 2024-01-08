@@ -53,7 +53,7 @@
   right: 10px;
   cursor: pointer;
 }
-.content__modal-1, .content__modal-2, .content__modal-3, .content__modal-4, .content__modal-5, .content__modal-6, .content__modal-wordDivision, s .content__modal-vending, .content__modal-cashpoint {
+.content__modal-1, .content__modal-2, .content__modal-3, .content__modal-4, .content__modal-5, .content__modal-6, .content__modal-wordDivision, .content__modal-modal, .content__modal-cashpoint, .content__modal-converter {
   background-color: #dedde4;
   position: absolute;
   top: 50%;
@@ -100,6 +100,7 @@
   border-radius: 10px;
   transition: 0.4s;
   flex-direction: column;
+  justify-content: space-between;
   transition: 0.4s;
 }
 .content__projects article:hover {
@@ -244,9 +245,10 @@
 }
 .content__modal-calculator {
   display: flex;
+  flex-wrap: wrap;
 }
 .content__modal-calculator-number {
-  width: 20%;
+  width: 33%;
   border: 2px solid #b770b0;
   background-color: #dedde4;
   cursor: pointer;
@@ -420,6 +422,51 @@
   transition: 0.4s;
   border-radius: 10px;
 }
+.content__modal-converter-btn {
+  display: inline;
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-converter-btn:hover {
+  background-color: #b770b0;
+}
+.content__modal-converter-btn:disabled {
+  background-color: #2f3541;
+}
+.content__modal-converter-converterBox {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.content__modal-converter-div {
+  margin: 10px auto;
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+.content__modal-converter-div h3 {
+  font-family: "Dancing Script", cursive;
+}
+.content__modal-converter-div input {
+  width: 80%;
+  border: 3px solid #b770b0;
+  margin: 40px;
+  padding: 10px 20px;
+  height: 70px;
+  border-radius: 15px;
+  font-size: 24px;
+}
+.content__modal-converter-div input:focus {
+  border: 5px solid #72516c;
+}
 
 .footer {
   background-color: #72516c;
@@ -439,5 +486,4 @@ body {
   color: #2f3541;
   text-align: center;
   background-color: #dedde4;
-  font-family: "Lunasima", sans-serif;
 }/*# sourceMappingURL=style.css.map */

@@ -136,11 +136,12 @@
 
     &__modal-calculator {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__modal-calculator-number {
         // display: inline;
-        width: 20%;
+        width: 33%;
         // margin: 20px;
         border: 2px solid $bar-color;
         background-color: $background-color;
@@ -149,6 +150,10 @@
         margin: 35px auto;
         transition: 0.4s;
         border-radius: 10px;
+
+        &:nth-last-child() {
+            width: 100%;
+        }
 
         &:hover {
             background-color: $bar-color;
@@ -333,7 +338,7 @@
                 text-align: center;
             }
 
-            input[type="button"] {
+            input[type='button'] {
                 width: 20%;
             }
             p {
@@ -354,6 +359,60 @@
                     border-radius: 10px;
                 }
             }
+        }
+    }
+
+    &__modal-converter {
+        &-btn {
+            display: inline;
+            width: 20%;
+            border: 2px solid $bar-color;
+            background-color: $background-color;
+            cursor: pointer;
+            padding: 20px 0;
+            margin: 10px auto;
+            transition: 0.4s;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $bar-color;
+            }
+
+            &:disabled {
+                background-color: $font-color;
+            }
+        }
+
+        &-converterBox {
+            width: 90%;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        &-div {
+            h3 {
+                font-family: $special-font;
+            }
+
+            input {
+                width: 80%;
+                border: 3px solid #b770b0;
+                margin: 40px;
+                padding: 10px 20px;
+                height: 70px;
+                border-radius: 15px;
+                font-size: $default-size;
+                &:focus {
+                    border: 5px solid $additional-color;
+                }
+            }
+            margin: 10px auto;
+            width: 60%;
+            // height: 100px;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
         }
     }
 }

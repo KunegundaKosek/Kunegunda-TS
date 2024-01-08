@@ -1,4 +1,17 @@
 import HomePage from './app/Home/HomePage';
+import {
+    about,
+    aboutText,
+    codewars,
+    codewarsText,
+    contact,
+    contactText,
+    descriptionEnd,
+    h1Txt,
+    introduction,
+    project,
+    projectText,
+} from './app/Home/data';
 import Navigation from './app/Nav/Nav';
 import ProjectPage from './app/Projects/ProjectPage';
 import { data, tile } from './app/data/data';
@@ -6,8 +19,8 @@ import { data, tile } from './app/data/data';
 export class App {
     constructor() {
         this.initialize();
-        this.renderProjectPage();
-        // this.renderHomePage();
+        // this.renderProjectPage();
+        this.renderHomePage();
     }
 
     initialize() {
@@ -49,9 +62,20 @@ export class App {
         const main = document.getElementById('main');
         if (main) {
             main.textContent = '';
-            const text =
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
-            new HomePage('Welcome!', text, 'content__introduction');
+            new HomePage(
+                h1Txt,
+                introduction,
+                'content__introduction',
+                about,
+                aboutText,
+                project,
+                projectText,
+                contact,
+                contactText,
+                codewars,
+                codewarsText,
+                descriptionEnd,
+            );
         }
     }
 }
