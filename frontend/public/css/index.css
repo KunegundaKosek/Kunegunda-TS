@@ -66,4 +66,26 @@
 }
 .content__projects article button:hover {
   background-color: #b770b0;
+}
+
+@media screen and (max-width: 1000px) {
+  .content article {
+    flex-basis: 98%;
+  }
+  .content article h2 {
+    font-size: 1rem;
+  }
+  .content article img {
+    width: 80%;
+  }
+  .content article p {
+    font-size: 0.8rem;
+  }
+  .content article button {
+    width: 70%;
+    height: 30px;
+  }
+  .content article:nth(0) {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

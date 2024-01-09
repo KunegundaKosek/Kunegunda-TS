@@ -6,10 +6,10 @@ export class Clicker extends Project {
     private h4: HTMLHeadingElement;
     private squaresContainer: HTMLDivElement;
     private initialValue: number = 0;
-    private containerInputElement: HTMLDivElement;
+    // private containerInputElement: HTMLDivElement;
     private operatorInput: HTMLSelectElement;
     private numberInput: HTMLInputElement;
-    private selectedOperator: string = '+'; // Domyślnie ustaw na "+"
+    private selectedOperator: string = '+'; // 
 
     constructor(
         modalContentSelector: string,
@@ -27,16 +27,16 @@ export class Clicker extends Project {
         this.operatorInput = this.createOperatorInput();
         this.numberInput = this.createNumberInput();
 
-        this.containerInputElement = document.createElement(
-            'div',
-        ) as HTMLDivElement;
-        this.containerInputElement.className =
-            'content__modal-clicker-inputContainer';
-        this.containerInputElement.appendChild(this.createOperatorInput());
+        // this.containerInputElement = document.createElement(
+        //     'div',
+        // ) as HTMLDivElement;
+        // this.containerInputElement.className =
+        //     'content__modal-clicker-inputContainer';
+        // this.containerInputElement.appendChild(this.createOperatorInput());
 
-        this.containerInputElement.appendChild(this.createNumberInput());
+        // this.containerInputElement.appendChild(this.createNumberInput());
 
-        this.div.appendChild(this.containerInputElement);
+        // this.div.appendChild(this.containerInputElement);
 
         this.setupUserInput();
 
@@ -160,6 +160,6 @@ export class Clicker extends Project {
             }
         });
 
-        this.containerInputElement.appendChild(calculateButton);
+        // this.containerInputElement.appendChild(calculateButton);
     }
 }

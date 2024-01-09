@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
+.content__modal-addingOnClick {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content__modal-addingOnClick-button {
+  display: block;
+  width: 50%;
+  margin: auto;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 35px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-addingOnClick-button:hover {
+  background-color: #b770b0;
+}
+.content__modal-addingOnClick-tile {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #b770b0;
+  margin: 10px;
+  padding-top: 8px;
+}
+.content__modal-addingOnClick-tileDivisibleByFive {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #b770b0;
+  margin: 10px;
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 410px) {
+  .content__modal-addingOnClick {
+    margin: auto;
+  }
+  .content__modal-addingOnClick-button {
+    width: 80%;
+    padding: 5px 0;
+  }
+  .content__modal-addingOnClick-tile {
+    width: 30px;
+    height: 30px;
+    font-size: 0.5rem;
+  }
+  .content__modal-addingOnClick-tileDivisibleByFive {
+    width: 30px;
+    height: 30px;
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=AddingOnClick.css.map */

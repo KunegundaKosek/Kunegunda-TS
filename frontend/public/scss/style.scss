@@ -4,7 +4,15 @@
 @import 'index';
 @import 'projects';
 @import 'footer';
-
+@import 'introduction';
+@import 'MousePosition';
+@import 'Clicker';
+@import 'ResizableText';
+@import 'AddingOnClick';
+@import 'WordDivision';
+@import 'Vending';
+@import 'Converter';
+@import 'Cashpoint.scss';
 
 * {
     margin: 0;
@@ -15,5 +23,4 @@
 body {
     color: $font-color;
     text-align: center;
-    background-color: #dedde4;
 }

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
+.content__modal-cashpoint input {
+  display: inline;
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 15px;
+  text-align: center;
+}
+.content__modal-cashpoint input[type=button] {
+  width: 100px;
+}
+.content__modal-cashpoint input[type=button]:hover {
+  background-color: #b770b0;
+}
+.content__modal-cashpoint input:disabled {
+  width: 100px;
+}
+.content__modal-cashpoint input:disabled:hover {
+  background-color: #dedde4;
+}
+.content__modal-cashpoint-box {
+  display: block;
+  margin: 10px;
+}
+.content__modal-cashpoint-box :nth-child(1) {
+  background-color: #874b0f;
+}
+.content__modal-cashpoint-box :nth-child(2) {
+  background-color: #c0c0c0;
+}
+.content__modal-cashpoint-box :nth-child(3) {
+  background-color: #ffd700;
+}
+.content__modal-cashpoint-box button {
+  font-family: "Dancing Script", cursive;
+  font-size: calc(2.4em / 2);
+  width: 20%;
+  height: 150px;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin: 20px;
+}
+.content__modal-cashpoint-box button:hover {
+  filter: saturate(50%);
+}
+.content__modal-cashpoint-display {
+  width: 50%;
+  border: 2px solid black;
+  background-color: white;
+  margin: 20px auto;
+}
+.content__modal-cashpoint-display input {
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 15px;
+  text-align: center;
+}
+.content__modal-cashpoint-display input[type=button] {
+  width: 100px;
+}
+.content__modal-cashpoint-display p {
+  margin: 30px;
+  padding: 25px;
+}
+.content__modal-cashpoint-display div {
+  margin: 30px 10px;
+}
+.content__modal-cashpoint-display div div {
+  display: block;
+  width: 80%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 10px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .content__modal-cashpoint input {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .content__modal-cashpoint input[type=button] {
+    width: 100px;
+    font-size: 1rem;
+  }
+  .content__modal-cashpoint-box :nth-child(1) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #874b0f;
+  }
+  .content__modal-cashpoint-box :nth-child(2) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #c0c0c0;
+  }
+  .content__modal-cashpoint-box :nth-child(3) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffd700;
+  }
+  .content__modal-cashpoint-display {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .content__modal-cashpoint input {
+    width: 50%;
+    font-size: 1rem;
+  }
+  .content__modal-cashpoint input[type=button] {
+    font-size: 0.7rem;
+  }
+  .content__modal-cashpoint-box :nth-child(1) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    background-color: #874b0f;
+  }
+  .content__modal-cashpoint-box :nth-child(2) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    background-color: #c0c0c0;
+  }
+  .content__modal-cashpoint-box :nth-child(3) {
+    height: 50px;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #495057;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    background-color: #ffd700;
+  }
+}/*# sourceMappingURL=Cashpoint.css.map */

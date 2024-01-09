@@ -13,7 +13,7 @@ export class WordDivision extends Project {
 
         this.input = document.createElement('input');
         this.button = document.createElement('button');
-        this.button.textContent = 'Sprawdź';
+        this.button.textContent = 'Look';
 
         this.divInfo = document.createElement('div');
 
@@ -33,11 +33,11 @@ export class WordDivision extends Project {
 
     private handleButtonClick(): void {
         if (this.input.value.trim() === '') {
-            alert('Wprowadź tekst');
+            alert('Enter text');
         } else {
             console.log(this.input.value);
 
-            this.h3.textContent = `Twoje zdanie: ${this.input.value}`;
+            this.h3.textContent = `Your sentence: ${this.input.value}`;
 
             const text: string = this.input.value.toLocaleLowerCase();
             const words: string[] = text
@@ -47,7 +47,7 @@ export class WordDivision extends Project {
             console.log(words);
             console.log(words.length);
 
-            this.pNumber.textContent = `Liczba słów: ${words.length}`;
+            this.pNumber.textContent = `Number of words: ${words.length}`;
 
             const wordCounts: { [key: string]: number } = {};
             const uniqueWords: Set<string> = new Set();
@@ -63,7 +63,7 @@ export class WordDivision extends Project {
 
             uniqueWords.forEach((word) => {
                 const title: HTMLLIElement = document.createElement('li');
-                title.textContent = `${word}: ${wordCounts[word]} razy`;
+                title.textContent = `${word}: ${wordCounts[word]} times`;
                 this.ul.appendChild(title);
             });
         }

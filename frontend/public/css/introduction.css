@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
+.content__introduction {
+  margin-bottom: 50%;
+}
+.content__introduction h1 {
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+.content__introduction h2 {
+  font-size: 1.8rem;
+}
+.content__introduction p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+}
+.content__introduction p a {
+  background-color: #6a6181;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+.content__introduction p span {
+  font-size: 1.7rem;
+  color: #b770b0;
+}/*# sourceMappingURL=introduction.css.map */

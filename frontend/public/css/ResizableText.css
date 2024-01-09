@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&family=Rubik:wght@500&family=Tektur:wght@500&family=Dancing+Script:wght@700");
+.content__modal-resizableText-btn {
+  display: inline;
+  width: 20%;
+  border: 2px solid #b770b0;
+  background-color: #dedde4;
+  cursor: pointer;
+  padding: 20px 0;
+  margin: 35px auto;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.content__modal-resizableText-btn:hover {
+  background-color: #b770b0;
+}
+.content__modal-resizableText-ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+  .content__modal-resizableText-btn {
+    width: 40%;
+  }
+}/*# sourceMappingURL=ResizableText.css.map */

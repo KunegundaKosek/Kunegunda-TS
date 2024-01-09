@@ -1,0 +1,1 @@
+{"version":3,"sources":["../scss/_variables.scss","../scss/ResizableText.scss","ResizableText.css"],"names":[],"mappings":"AAAQ,4IAAA;ACKI;EACI,eAAA;EACA,UAAA;EACA,yBAAA;EACA,yBDPG;ECQH,eAAA;EACA,eAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;ACHhB;ADKgB;EACI,yBDbR;AEUZ;ADMY;EACI,gBAAA;ACJhB;;ADaA;EAIgB;IACI,UAAA;ECblB;AACF","file":"ResizableText.css"}
