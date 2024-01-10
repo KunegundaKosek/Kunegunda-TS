@@ -161,7 +161,7 @@ export const data: ProjectData[] = [
     {
         title: 'Vending machine with drinks',
         src: '../image/VendingMachine.png',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        text: 'The "Beverage Vending Machine" project is a simulation of a beverage vending machine. The user has access to a specific quantity of drinks in the vending machine, and the task is to select a beverage, input a specific amount of money (20 PLN), and then place an order. The application manages the process of selecting a drink, checking its availability in the machine, inserting money, and provides change if necessary. The project serves as a straightforward simulator for interacting with a beverage vending machine, allowing users to experience a virtual beverage purchase from an automated dispenser.',
         button: 'Look',
         buttonId: 'project7',
         event: () => {

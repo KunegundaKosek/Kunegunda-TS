@@ -14,7 +14,7 @@ export const projectText: string =
 
 export const contact: string = 'Contact';
 export const contactText: string =
-    "I'm open to connecting with you! You can visit my LinkedIn profile link or reach out to me directly at my email address: kosekkunegunda@gmail.com.";
+    "I'm open to connecting with you! You can visit my LinkedIn profile link or reach out to me directly at my email address: <a href='mailto:kosekkunegunda@gmail.com'>kosekkunegunda@gmail.com.</a>";
 
 export const codewars: string = 'Coding for Fun';
 export const codewarsText: string =

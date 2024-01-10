@@ -1,3 +1,4 @@
+import ContactPage from './app/Contact/ContactPage';
 import HomePage from './app/Home/HomePage';
 import {
     about,
@@ -28,7 +29,7 @@ export class App {
     }
 
     setupNavigation() {
-        new Navigation('KUNEGUNDA', tile, 'fa-solid fa-computer');
+        new Navigation('KUNEGUNDA ', tile, 'fa-solid fa-computer');
 
         const projectButton = document.getElementById(
             'project',
@@ -46,7 +47,7 @@ export class App {
             'contact',
         )! as HTMLDivElement;
         contactButton.addEventListener('click', () => {
-            alert('dodaj metodę renderContactPage()!');
+            ContactPage('Contact Details');
         });
     }
 

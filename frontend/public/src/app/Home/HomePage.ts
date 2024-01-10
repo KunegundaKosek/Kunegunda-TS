@@ -63,7 +63,7 @@ export default class HomePage {
         const contact: HTMLHeadingElement = document.createElement('h2');
         contact.textContent = title3;
         const contactText: HTMLParagraphElement = document.createElement('p');
-        contactText.textContent = text3;
+        contactText.innerHTML = text3;
         contact.appendChild(contactText)
 
         const codewars: HTMLHeadingElement = document.createElement('h2');
