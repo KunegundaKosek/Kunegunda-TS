@@ -1,0 +1,60 @@
+@import '_variables';
+
+.content {
+    min-height: 100vh;
+    &__introduction {
+        h1 {
+            margin: 30px 0 15px 0;
+            font-size: 2rem;
+            font-family: $title-font;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+
+            a {
+                background-color: $icon-color;
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+            }
+
+            span {
+                font-size: 1.7rem;
+                color: $bar-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        &__introduction {
+            padding: 0;
+            h1 {
+                margin: 20px;
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 0.9rem;
+            }
+
+            p {
+                font-size: 0.75rem;
+
+                a {
+                    padding: 0;
+                }
+                span {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}

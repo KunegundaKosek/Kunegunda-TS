@@ -1,5 +1,4 @@
-import Project from '../../app/Projects/Project';
-
+import Project from '../../app/components/Projects/Project';
 interface TestData {
     title: string;
     src: string;
@@ -36,7 +35,7 @@ describe.skip('Project', () => {
         );
     });
     it('should create an instance of Project with the correct properties', () => {
-        // Testy na właściwości utworzonej instancji projektu
+
         const renderedTile = project.render();
 
         expect(project).toBeInstanceOf(Project);

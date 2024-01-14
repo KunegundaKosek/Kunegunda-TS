@@ -1,10 +1,11 @@
 # TypeScript Project
 
 ## Navigation
-1. [TypeScript Project](#typescript-project)
-2. [Cloning the Repository](#cloning-the-repository)
-3. [Running the Projects](#runnig-the-project)
-4. [Projects](#projects)
+1. [Navigation](#navigation)
+2. [TypeScript Project](#typescript-project)
+3. [Cloning the Repository](#cloning-the-repository)
+4. [Running the Projects](#runnig-the-project)
+5. [Projects](#projects)
       - [Dynamic Mouse-Position-Based Background Color Changer](#dynamic-mouse-position-based-background-color-changer)
       - [Interactive Clicker App](#interactive-clicker-app)
       - [Dynamic Number Display App](#dynamic-number-display-app)

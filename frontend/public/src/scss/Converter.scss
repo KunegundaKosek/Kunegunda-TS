@@ -1,0 +1,61 @@
+@import '_variables';
+
+.content {
+    &__modal-converter {
+        &-converterBox {
+            width: 90%;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        &-div {
+            h3 {
+                font-family: $special-font;
+            }
+
+            input {
+                width: 80%;
+                border: 3px solid #b770b0;
+                margin: 40px;
+                padding: 10px 20px;
+                height: 70px;
+                border-radius: 15px;
+                font-size: $default-size;
+                &:focus {
+                    border: 5px solid $additional-color;
+                }
+            }
+            margin: 10px auto;
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        &__modal-converter {
+            &-div {
+                padding-top: 10px;
+                width: 100%;
+                h3 {
+                    font-size: 1rem;
+                }
+
+                input {
+                    width: 99%;
+                    height: 30px;
+                    margin: 20px auto;
+                    font-size: 0.9rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

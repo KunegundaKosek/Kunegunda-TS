@@ -1,5 +1,4 @@
-// import Project from "../../app/Projects/Project";
-import ProjectPage from '../../app/Projects/ProjectPage';
+import ProjectPage from "../../app/components/Projects/ProjectPage";
 
 describe.skip('ProjectPage', () => {
     let main: HTMLElement;
@@ -40,15 +39,6 @@ describe.skip('ProjectPage', () => {
         const projects = projectPage.getProjects();
         expect(Array.isArray(projects)).toBe(true);
         expect(projects.length).toBe(data.length);
-
-        // TO IMPROVE !!!!!!!!!!!!!!!
-        //   const renderSpy = jest.spyOn(Project.prototype, 'render');
-
-        //   projects.forEach((project) => {
-        //       expect(renderSpy).toHaveBeenCalled();
-        //       expect(project).toBeInstanceOf(Project);
-        //   });
-        //   renderSpy.mockRestore();
     });
 
     it.only('should render the correct number of projects', () => {
@@ -82,6 +72,5 @@ describe.skip('ProjectPage', () => {
 
         expect(projects).not.toBeNull();
         expect(projects?.length).toBe(data.length);
-
     });
 });

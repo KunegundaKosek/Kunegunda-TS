@@ -1,0 +1,27 @@
+@import '_variables';
+@import 'Header';
+@import 'Modal';
+@import 'index';
+@import 'Projects';
+@import 'Footer';
+@import 'Introduction';
+@import 'MousePosition';
+@import 'Clicker';
+@import 'ResizableText';
+@import 'AddingOnClick';
+@import 'WordDivision';
+@import 'Vending';
+@import 'Converter';
+@import 'Cashpoint.scss';
+@import 'Contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $font-color;
+    text-align: center;
+}

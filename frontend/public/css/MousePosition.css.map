@@ -1,1 +1,0 @@
-{"version":3,"sources":["../scss/_variables.scss","../scss/MousePosition.scss","MousePosition.css"],"names":[],"mappings":"AAAQ,4IAAA;ACGA;EACI,gBDWC;ECVD,gCDMC;AEPb;ADIQ;EACI,eDKG;ECJH,mCDFG;ECGH,yBAAA;ACFZ;ADKQ;EACI,iBAAA;ACHZ;;ADQA;EAGY;IACI,iBAAA;ECPd;EDUU;IACI,iBAAA;ECRd;EDWU;IACI,eAAA;IACA,gBAAA;ECTd;AACF","file":"MousePosition.css"}

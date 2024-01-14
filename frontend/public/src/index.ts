@@ -1,5 +1,5 @@
-import ContactPage from './app/Contact/ContactPage';
-import HomePage from './app/Home/HomePage';
+import ContactPage from './app/components/Contact/ContactPage';
+import HomePage from './app/components/Home/HomePage';
 import {
     about,
     aboutText,
@@ -12,15 +12,14 @@ import {
     introduction,
     project,
     projectText,
-} from './app/Home/data';
-import Navigation from './app/Nav/Nav';
-import ProjectPage from './app/Projects/ProjectPage';
-import { data, tile } from './app/data/data';
+} from './app/components/Home/Description';
+import Navigation from './app/components/Nav/Nav';
+import ProjectPage from './app/components/Projects/ProjectPage';
+import { data, tile } from './app/ShowProjects/ShowProjects';
 
 export class App {
     constructor() {
         this.initialize();
-        // this.renderProjectPage();
         this.renderHomePage();
     }
 

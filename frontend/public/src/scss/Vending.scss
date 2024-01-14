@@ -1,0 +1,66 @@
+@import '_variables';
+
+.content {
+    &__modal-vending {
+        div {
+            button {
+                display: inline;
+                width: 20%;
+                border: 2px solid $bar-color;
+                background-color: $background-color;
+                cursor: pointer;
+                padding: 20px 0;
+                margin: 10px 20px;
+                transition: 0.4s;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $bar-color;
+                }
+
+                &:disabled {
+                    background-color: $font-color;
+                }
+            }
+        }
+
+        &-lack {
+            color: red;
+            font-weight: 900;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        &__modal-vending {
+            div {
+                button {
+                    width: 40%;
+                    padding: 0;
+                    &:disabled {
+                        width: 40%;
+                        padding: 5px;
+                    }
+                }
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content {
+        &__modal-vending {
+            div {
+                button {
+                    width: 40%;
+                    padding: 5px;
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+}
