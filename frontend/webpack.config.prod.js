@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './public/src/index.ts', // Zaktualizowano ścieżkę do pliku wejściowego
+    entry: './public/src/index.ts',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public/dist'),
@@ -28,7 +28,7 @@ module.exports = {
                 use: {
                     loader: 'ts-loader',
                     options: {
-                        configFile: './tsconfig.json', // Dodaj ścieżkę do pliku tsconfig.json Bootstrapa
+                        configFile: './tsconfig.json',
                     },
                 },
             },
@@ -41,7 +41,6 @@ module.exports = {
         new CleanPlugin.CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            // aktualizacja
             filename: 'index.html',
             inject: 'body',
         }),
