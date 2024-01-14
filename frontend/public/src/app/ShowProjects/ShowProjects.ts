@@ -12,7 +12,7 @@ import { Converter } from '../components/Projects/Project/Project10/Converter';
 export const data: ProjectData[] = [
     {
         title: 'Dynamic Mouse-Position-Based Background Color Changer',
-        src: './src/assets/image/MousePosition.png',
+        src: '../src/assets/image/MousePosition.png',
         text: 'This simple yet engaging application transforms your desktop experience by responding to the real-time movement of the mouse, creating a unique and personalized display. Explore the seamless transition of colors as you navigate, adding an interactive and visually appealing touch to your computing environment.',
         button: 'Look',
         buttonId: 'project1',
