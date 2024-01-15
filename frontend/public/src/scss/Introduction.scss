@@ -18,8 +18,8 @@
             font-size: 1.5rem;
 
             a {
-                background-color: $icon-color;
-                text-decoration: none;
+                text-decoration: underline;
+                text-decoration-style: solid;
                 color: white;
                 padding: 5px;
             }

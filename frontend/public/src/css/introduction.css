@@ -15,8 +15,8 @@
   font-size: 1.5rem;
 }
 .content__introduction p a {
-  background-color: #6a6181;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: solid;
   color: white;
   padding: 5px;
 }

@@ -32,7 +32,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Interactive Clicker App',
-        src: './src/assets/image/Clicker.png',
+        src: '../src/assets/image/Clicker.png',
         text: 'A captivating and straightforward application that turns every click into a dynamic mathematical operation. Each element within the designated square bears a numeric value, and upon clicking, the app instantly performs the corresponding operation on the cumulative total displayed at the top. Immerse yourself in an engaging clicker experience that not only keeps track of your actions but also challenges you to strategically accumulate points. ',
         button: 'Look',
         buttonId: 'project2',
@@ -51,7 +51,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Dynamic Number Display App',
-        src: './src/assets/image/AddingOnClick.png',
+        src: '../src/assets/image/AddingOnClick.png',
         text: 'With each button click, a series of numbers unfolds on your screen. What sets this app apart is its intriguing twist – whenever a displayed number is divisible by 5, its appearance transforms.',
         button: 'Look',
         buttonId: 'project3',
@@ -77,7 +77,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Text Size Modifier App',
-        src: './src/assets/image/ResizableText.png',
+        src: '../src/assets/image/ResizableText.png',
         text: 'Introducing the Text Size Modifier App, where every click on the "Plus 1px" button elevates the text size by 1 pixel. Designed for precision, this application allows you to finely adjust the text size according to your preferences. Additionally, you have the flexibility to set the text size to a base value of 10 pixels. ',
         button: 'Look',
         buttonId: 'project4',
@@ -98,7 +98,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Word Division',
-        src: './src/assets/image/WordDivision.png',
+        src: '../src/assets/image/WordDivision.png',
         text: 'A program that takes user input as text and then performs an analysis of the frequency of each word. The program divides the text into words, regardless of letter case, calculates the occurrence of each word, and presents the results in the console in alphabetical order. This project enables quick text analysis and identification of the most frequently used words, without considering letter case.',
         button: 'Look',
         buttonId: 'project6',
@@ -120,7 +120,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Vending machine with drinks',
-        src: './src/assets/image/VendingMachine.png',
+        src: '../src/assets/image/VendingMachine.png',
         text: 'The "Beverage Vending Machine" project is a simulation of a beverage vending machine. The user has access to a specific quantity of drinks in the vending machine, and the task is to select a beverage, input a specific amount of money (20 PLN), and then place an order. The application manages the process of selecting a drink, checking its availability in the machine, inserting money, and provides change if necessary. The project serves as a straightforward simulator for interacting with a beverage vending machine, allowing users to experience a virtual beverage purchase from an automated dispenser.',
         button: 'Look',
         buttonId: 'project7',
@@ -142,7 +142,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'Dynamic Unit Converter: Effortless Conversions Across Multiple Unit Categories',
-        src: './src/assets/image/Converter.png',
+        src: '../src/assets/image/Converter.png',
         text: 'This mini project utilizes the "convert-units" library to create a unit converter. The user inputs a numerical value, and the application converts it into various units. The supported unit categories include Length, Area, Mass, Volume, Temperature, Time and Speed.  The application dynamically displays the converted values for all units within the selected category, offering a versatile and user-friendly unit conversion tool.',
         button: 'Look',
         buttonId: 'project7',
@@ -160,7 +160,7 @@ export const data: ProjectData[] = [
 
     {
         title: 'ATM App - Your All-in-One Banking Solution',
-        src: './src/assets/image/CashPoint.png',
+        src: '../src/assets/image/CashPoint.png',
         text: 'With this application, you can make deposits, withdraw cash, and update your PIN, providing full control over your accounts. Choose from three different card options, each tailored to various financial needs.',
         button: 'Look',
         buttonId: 'project7',
